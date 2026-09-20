@@ -1,0 +1,14 @@
+KP DATA SOLUTIONS - LOCAL PUBLISHING
+
+1. Keep ALL website files in your existing local kp-data-solutions Git repository.
+2. Copy publish.bat into the ROOT of that folder (same place as index.html).
+3. Edit/test the website locally.
+4. Double-click publish.bat.
+5. Enter a short description of the change, or press Enter for the default.
+6. The script runs: git add . -> git commit -> git push origin main.
+7. GitHub Pages will then deploy the pushed version to your website.
+
+IMPORTANT:
+- The folder must already be the Git repository connected to your GitHub project.
+- Git for Windows must be installed and you must be authenticated with GitHub.
+- Do not put passwords or API keys in HTML/JavaScript files before publishing.
