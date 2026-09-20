@@ -63,6 +63,26 @@ body{overflow-x:hidden}.navbar{box-shadow:0 8px 30px rgba(0,0,0,.12)}.hero{posit
 
 <section class="stack"><div class="wrap"><div class="head"><span class="kicker">Technology</span><h2>Our <span>Technology Stack</span></h2></div><div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">Azure Databricks</span><span class="chip">Microsoft Fabric</span><span class="chip">PySpark</span><span class="chip">Apache Spark</span><span class="chip">Delta Lake</span><span class="chip">Power BI</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Azure Data Factory</span><span class="chip">Excel</span></div></div></section>
 
+<section class="analytics-lab" id="analytics-lab"><div class="wrap">
+<div class="head"><span class="kicker">Interactive Analytics Lab</span><h2>Build Your Own <span>Analytics</span></h2><p>Upload a sample CSV, choose how you want to explore it, and generate instant visualisations and basic insights directly in your browser.</p><span class="privacy-chip">● Sample / non-sensitive data only · processed locally in your browser</span></div>
+<div class="lab-shell">
+<div class="lab-panel">
+<label for="lab-file">Upload CSV</label><input id="lab-file" type="file" accept=".csv,text/csv">
+<p class="lab-help">For this demo, use a CSV under 3 MB. Your file stays in your browser and is not sent to KP Data Solutions.</p>
+<label for="lab-question">What do you want to understand?</label><textarea id="lab-question" placeholder="Example: Compare sales by region"></textarea>
+<label for="lab-category">Group by</label><select id="lab-category"><option value="">Auto detect</option></select>
+<label for="lab-value">Measure</label><select id="lab-value"><option value="">Auto detect</option></select>
+<label for="lab-chart-type">Visualisation</label><select id="lab-chart-type"><option value="bar">Bar chart</option><option value="line">Line chart</option><option value="donut">Donut chart</option></select>
+<div class="lab-actions"><button class="lab-primary" id="lab-build" type="button">Build analytics</button><button class="lab-secondary" id="lab-demo" type="button">Load demo data</button></div>
+<div class="lab-status" id="lab-status" aria-live="polite">Upload a CSV or load the demo dataset to begin.</div>
+</div>
+<div class="lab-output">
+<div class="lab-kpis" id="lab-kpis"><div class="lab-kpi"><strong>—</strong><span>Rows</span></div><div class="lab-kpi"><strong>—</strong><span>Total</span></div><div class="lab-kpi"><strong>—</strong><span>Average</span></div><div class="lab-kpi"><strong>—</strong><span>Top group</span></div></div>
+<div class="lab-chart" id="lab-chart"><div class="lab-empty"><div><strong>Your visualisation will appear here</strong><br><span>Try “Load demo data” for an instant example.</span></div></div></div>
+<div class="lab-insights" id="lab-insights"><h4>Automated insights</h4><ul><li>Insights will be generated after you build the analysis.</li></ul></div>
+</div>
+</div></div></section>
+
 <section class="work" id="projects"><div class="wrap">
 <div class="head"><span class="kicker">Portfolio Projects</span><h2>Featured Work</h2><p>Demonstration projects showcasing the type of engineering and analytics solutions KP Data Solutions can deliver.</p></div>
 <div class="projects">
